@@ -1,6 +1,7 @@
 body {
 	background-color: beige;
 	text-align: center;
+	padding-bottom: 20px;
 }
 .container {
 	margin-top: 20px;
@@ -37,4 +38,14 @@ img {
 	width: 100%;
 	display: flex;
 	justify-content: space-around;
+}
+svg {
+	display: flex;
+	height: 22px;
+	width: 22px;
+	align-items: center;
+	justify-content: center;
+}
+button {
+	padding: 0;
 }
