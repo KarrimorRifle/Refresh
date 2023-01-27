@@ -29,7 +29,9 @@ app.get('/scroll', async (req, res) => {
 app.get('/', async (req, res) => {
 	let quote = await fetch('https://zenquotes.io/api/today');
 	quote = await quote.json();
-	res.render('home', { quote: quote[0] });
+	let profile = await fetch('https://api.github.com/users/KarrimorRifle');
+	profile = await profile.json();
+	res.render('home', { quote: quote[0], profile: profile });
 });
 
 //app listen

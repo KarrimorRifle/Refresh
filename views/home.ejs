@@ -32,5 +32,20 @@
 				<p class="credit">By: <%= quote.a %></p>
 			</div>
 		</div>
+		<div class="container">
+			<div class="card">
+				<h2>My GitHub Profile</h2>
+				<hr />
+				<div class="git">
+					<img src="<%= profile.avatar_url %>" alt="" />
+					<div class="git-text">
+						<h3>Username: '<%=profile.login%>'</h3>
+						<h3>Name: '<%=profile.name%>'</h3>
+						<h5>Public Repos: '<%= profile.public_repos%>'</h5>
+						<a href="<%=profile.html_url%>">Profile Link</a>
+					</div>
+				</div>
+			</div>
+		</div>
 	</body>
 </html>
