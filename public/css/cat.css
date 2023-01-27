@@ -1,0 +1,31 @@
+img {
+	width: 500px;
+	border-radius: 25px;
+}
+button {
+	display: block;
+	width: 500px;
+	min-height: 50px;
+	border: none;
+	border-radius: 10px;
+}
+button:hover {
+	background-color: rgb(133, 133, 133);
+	cursor: pointer;
+}
+.card {
+	width: 700px;
+	display: flex;
+	flex-direction: column;
+	margin: 20px auto 0;
+	align-items: center;
+	background-color: blanchedalmond;
+	min-height: 100vh;
+	border-radius: 50px;
+	border-width: 5px;
+	border-color: bisque;
+	border-style: solid;
+}
+body {
+	background-color: rgb(255, 255, 255);
+}
