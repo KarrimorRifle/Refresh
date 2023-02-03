@@ -25,6 +25,22 @@ app.get('/scroll', async (req, res) => {
 	res.render('scroll.ejs');
 });
 
+//pokemon api
+app.get('/pokemon', async (req,res) => {
+	try{
+		var pokemon = await fetch(`https://pokeapi.co/api/v2/pokemon/${(req.query.findPokemon) ? req.query.findPokemon : 1}/`);
+		var data = await pokemon.json();
+		res.render('pokemon.ejs', {pokemon: data});
+		
+	} catch(e){
+		var pokemon = await fetch(`https://pokeapi.co/api/v2/pokemon/1/`)
+		var data = await pokemon.json();
+		res.render('pokemon.ejs', {pokemon: data});
+		console.log(e);
+	}
+	
+})
+
 //home
 app.get('/', async (req, res) => {
 	let quote = await fetch('https://zenquotes.io/api/today');

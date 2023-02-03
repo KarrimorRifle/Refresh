@@ -11,7 +11,6 @@ button {
 }
 button:hover {
 	background-color: rgb(133, 133, 133);
-	cursor: pointer;
 }
 .card {
 	width: 700px;
